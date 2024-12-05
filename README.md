@@ -16,8 +16,8 @@ This shell script is designed to automate the installation of Foxytoux, a lightw
 1. Clone the repository:
 
     ```sh
-    git clone https://github.com/foxytouxxx/freeroot.git
-    cd freeroot
+    git clone https://github.com/2B3G/root.git
+    cd root
     ```
 
 2. Run the installer script:
