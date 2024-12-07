@@ -13,7 +13,7 @@ process.stdout.on('data', (data) => {
     // When entered root
     if(data.toString().includes("Mission")){
         process.stdin.write('apk update\n');
-        process.stdin.write('apk get curl\n');
+        process.stdin.write('apk add curl\n');
         process.stdin.write('curl -sSf https://sshx.io/get | sh\n');
     }
 });
