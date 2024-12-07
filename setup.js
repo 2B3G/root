@@ -1,7 +1,7 @@
 const { spawn } = require('child_process');
 
 const command = 'bash';
-const args = ['root/root.sh'];
+const args = ['root.sh'];
 
 // Spawn the process
 const process = spawn(command, args, { stdio: 'pipe' }); // Use 'pipe' to enable interaction with stdin
