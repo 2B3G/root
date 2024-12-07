@@ -1,10 +1,7 @@
-const { spawn, execute } = require('child_process');
-
-// Define the command and arguments
-execute("git pull https://github.com/2B3G/root.git")
+const { spawn } = require('child_process');
 
 const command = 'bash';
-const args = ['root/noninteractive.sh']; // Adjust the script and arguments as needed
+const args = ['root/noninteractive.sh'];
 
 // Spawn the process
 const process = spawn(command, args, { stdio: 'pipe' }); // Use 'pipe' to enable interaction with stdin
@@ -12,6 +9,8 @@ const process = spawn(command, args, { stdio: 'pipe' }); // Use 'pipe' to enable
 // Log standard output
 process.stdout.on('data', (data) => {
     console.log(`STDOUT: ${data.toString()}`);
+
+    // When entered root
     if(data.toString().includes("Mission")){
         process.stdin.write('apt update -y\n');
         process.stdin.write('apt install curl -y\n');
