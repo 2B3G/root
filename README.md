@@ -1,14 +1,15 @@
-# Foxytoux Installer
+# Alpine linux Installer
 
 ## Overview
 
-This shell script is designed to automate the installation of Foxytoux, a lightweight Ubuntu environment using Proot.
+This shell script is designed to automate the installation of alpine linux, a lightweight environment using Proot.
 
 ## Prerequisites
 
 - Bash shell environment
 - Internet connectivity
 - Supported CPU architecture: x86_64 (amd64) or aarch64 (arm64)
+- Nodejs installed
 
 ## Installation
 
@@ -16,17 +17,12 @@ This shell script is designed to automate the installation of Foxytoux, a lightw
 
     ```sh
     git clone https://github.com/2B3G/root.git
-    cd root
     ```
 
-2. Run the installer script:
+2. Run the setup.js script using nodejs:
 
     ```sh
-    ./root.sh
-    ```
-    or
-    ```sh
-    bash root.sh
+    node root/setup
     ```
 
 ## Supported Architectures
@@ -36,13 +32,7 @@ This shell script is designed to automate the installation of Foxytoux, a lightw
 
 ## License
 
-This Foxytoux Installer script is released under the [MIT License](LICENSE).
-
-## Credits
-
-Foxytoux Installer is developed and maintained by RecodeStudios.Cloud.
-This installer has been made possible thanks to [dxomg](https://github.com/dxomg) for his proot code
-
+This Alpine linux Installer script is released under the [MIT License](LICENSE).
 ---
 
 **Note:** This script is intended for educational and experimental purposes. Use it responsibly and at your own risk.
